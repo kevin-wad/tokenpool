@@ -9,7 +9,7 @@ var environment = process.env.NODE_ENV || 'development';
 
 /*
 var htmlPlugin = new HtmlWebpackPlugin({
-      title: '0xBitcoin',
+      title: 'Etica',
      filename: 'index.html',
       template: 'app/index.html',
 });
