@@ -1,6 +1,6 @@
 
-var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/gmXEVo5luMPUGPqg6mhy';
-var INFURA_MAINNET_URL = 'https://mainnet.infura.io/gmXEVo5luMPUGPqg6mhy';
+var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/v3/64141414ea5e4aa6acc59866b4b620d4';
+var INFURA_MAINNET_URL = 'https://mainnet.infura.io/v3/64141414ea5e4aa6acc59866b4b620d4';
 
 
 var https_enabled = process.argv[2] === 'https';

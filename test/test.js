@@ -1,5 +1,5 @@
 
-var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/gmXEVo5luMPUGPqg6mhy';
+var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/v3/64141414ea5e4aa6acc59866b4b620d4';
 
 const poolConfig = require('../pool.config').config;
 var accountConfig = require('../test.account.config').account;
