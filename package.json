@@ -1,10 +1,10 @@
 {
-  "name": "TokenPoolEtica",
+  "name": "TokenPool",
   "version": "1.4.0",
   "engines": {
     "node": ">=8.9"
   },
-  "description": "A token pool coordinator",
+  "description": "A token pool coordinator which poolmines energy tokens such as 0xBitcoin",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
