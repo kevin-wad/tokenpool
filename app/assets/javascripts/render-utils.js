@@ -7,7 +7,7 @@ module.exports={
 
   formatTokenQuantity(satoshis)
   {
-	return (parseFloat(satoshis) / parseFloat(1e8)).toString();
+	return (parseFloat(satoshis) / parseFloat(1e18)).toString();
   },
 
   // taken from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round

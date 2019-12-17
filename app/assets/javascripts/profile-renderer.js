@@ -366,7 +366,7 @@ export default class ProfileRenderer {
   }
 
   formatTokenQuantity(satoshis) {
-    var quantity = (parseFloat(satoshis) / parseFloat(1e8)).toFixed(2)
+    var quantity = (parseFloat(satoshis) / parseFloat(1e18)).toFixed(2)
     if(isNaN(quantity)){
       quantity = 0.0;
       quantity = quantity.toFixed(2);

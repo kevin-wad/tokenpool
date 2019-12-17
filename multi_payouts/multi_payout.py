@@ -37,7 +37,7 @@ for pubkey in r.hgetall("miner_data"):
       miner = r.hget("miner_data", pubkey)
       minerData = json.loads(miner.decode())
       balance = int(minerData['tokenBalance'])
-      if balance >payout_min*1E8:
+      if balance >payout_min*1E18:
           if sender.isInvalidAddress(pubkey):
             print("pubkey is contract", pubkey)
             merc.append([ Web3.toChecksumAddress(pubkey.decode()), balance, pubkey])
@@ -53,7 +53,7 @@ for pubkey in r.hgetall("miner_data"):
       print(miner)
 
 print(sent_transactions)
-print('total balance',total_balance/1E8)
+print('total balance',total_balance/1E18)
 print(len(sent_transactions))
 
 #if total_balance == 0:

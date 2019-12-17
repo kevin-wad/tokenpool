@@ -26,8 +26,8 @@ for pubkey in payout_addresses:
     try:
       miner = r.hget("miner_data", pubkey)
       minerData = json.loads(miner.decode())
-      balance = int(minerData['tokenBalance']) # Todo remove 1E8 for live
-      if balance >payout_min*1E8:
+      balance = int(minerData['tokenBalance']) # Todo remove 1E18 for live
+      if balance >payout_min*1E18:
           if sender.isInvalidAddress(pubkey):
             print("pubkey is contract", pubkey)
             merc.append([ Web3.toChecksumAddress(pubkey.decode()), balance, pubkey])
@@ -40,7 +40,7 @@ for pubkey in payout_addresses:
       print(miner)
 
 print(sent_transactions)
-print(total_balance/1E8)
+print(total_balance/1E18)
 print(len(sent_transactions))
 
 #if total_balance == 0:

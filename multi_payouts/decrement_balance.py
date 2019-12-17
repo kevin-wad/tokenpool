@@ -3,7 +3,7 @@ import redis
 
 r = redis.Redis(host='10.142.0.4')
 def decrement(pub, amount):
-  satoshis = amount*1E8
+  satoshis = amount*1E18
   data = r.hget("miner_data",pub)
   print('before',data)
   data = json.loads(data.decode())
