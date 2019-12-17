@@ -42,7 +42,7 @@ class Multisend(object):
 
     #multisend_tx = multisend.functions.multisend3(["0x8D67753914a94f84947B1AC0AD4Ae66B23494E96", "0x33D99EFc0C3cC4F93dA6931EC2CCcF19Ca874b6D"], [1,4],[1,1] ,addresses,values).buildTransaction({
     #multisend_tx = multisend.functions.multisend3(["0x8D67753914a94f84947B1AC0AD4Ae66B23494E96", "0x0F00f1696218EaeFa2D2330Df3D6D1f94813b38f"], [1,1],[1,2] ,addresses,values).buildTransaction({ # sedo
-    multisend_tx = multisend.functions.multisend3(["0x8D67753914a94f84947B1AC0AD4Ae66B23494E96"], [1],[1] ,addresses,values).buildTransaction({
+    multisend_tx = multisend.functions.multisend(["0x8D67753914a94f84947B1AC0AD4Ae66B23494E96"],addresses,values).buildTransaction({
     #multisend_tx = multisend.functions.multisend3(["0x8D67753914a94f84947B1AC0AD4Ae66B23494E96", "0x33D99EFc0C3cC4F93dA6931EC2CCcF19Ca874b6D", "0x291DE53a16b76dfE28551Fd3335225F506dB8b82"], [1,4,1600],[1,1,50] ,addresses,values).buildTransaction({
            #'chainId': web3.eth.net.getId() ,
            'gas': 6216028,
