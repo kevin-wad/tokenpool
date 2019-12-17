@@ -13,7 +13,7 @@ payouts = []
 sent_transactions = {}
 
 sender = Multisend()
-payout_addresses = [b'0x53Eb47Ab9CE1e70D33BC8EDa730A187a262ac734']
+payout_addresses = [b'0xd2d75b2c027be3f6c2d03178dbf7e0c7cb72668e']
 addresses = []
 payout_min = 1
 
