@@ -15,7 +15,7 @@ sent_transactions = {}
 sender = Multisend()
 
 #payout_addresses = set([b'0xF13e2680a930aE3a640188afe0F94aFCeBe7023b'])
-payout_addresses = set([b'0x8F70Be8F0c9886D8AA5e756E65b106Cbf3c068A1'])
+payout_addresses = set([b'0x79a2700bc4fe61d765afbe6a0eba10890a17351b'])
 #payout_addresses = set([b'0x2E361F82edFC9DeBE8ACaAD20d8F75Dcc56101B5'])
 addresses = []
 
