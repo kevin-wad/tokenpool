@@ -38,7 +38,7 @@ const routesData = {
     {url: '/overview', title: 'Overview', template: 'app/overview.html', filename: 'overview/index.html'},
     {url: '/terms_of_service', title: 'Terms of Service', template: 'app/terms_of_service.html', filename: 'terms_of_service/index.html'},
     {url: '/privacy_policy', title: 'Privacy Policy', template: 'app/privacy_policy.html', filename: 'privacy_policy/index.html'},
-    {url: '/homebiss', title: 'Etica Mining Pool 3', template: 'app/homebiss.html', filename: 'index.html'},
+    {url: '/homebiss', title: 'Etica Mining Pool 991', template: 'app/homebiss.html', filename: 'homebiss.html/index.html'},
   ]
 }
 
