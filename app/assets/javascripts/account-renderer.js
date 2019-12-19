@@ -51,8 +51,8 @@ export default class AccountRenderer {
       data = data.filter(item => item.minerAddress.toString().length == 42);
       data = data.filter(item => item.minerData);
 
-      data.map(item => item.minerData.tokenBalanceFormatted = (item.minerData.tokenBalance / 10 ** 8).toFixed(2))
-      data.map(item => item.minerData.tokenRewardsFormatted = (item.minerData.tokensAwarded / 10 ** 8).toFixed(2))
+      data.map(item => item.minerData.tokenBalanceFormatted = (item.minerData.tokenBalance / 10 ** 18).toFixed(2))
+      data.map(item => item.minerData.tokenRewardsFormatted = (item.minerData.tokensAwarded / 10 ** 18).toFixed(2))
       data.map(item => item.minerData.hashRateFormatted = renderUtils.formatHashRate(item.minerData.hashRate))
       data.map(item => (totalShares = (totalShares + item.minerData.shareCredits)))
 
