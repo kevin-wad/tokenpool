@@ -10,11 +10,11 @@
 }
 
 .demo-1 .large-header {
-	background-image: url('../img/demo-1-bg.jpg');
+	background-image: url('../images/univers.png');
 }
 
 .demo-2 .large-header {
-	background-image: url('../img/demo-2-bg.jpg');
+	background-image: url('../images/demo-2-bg.jpg');
 	background-position: center bottom;
 }
 
