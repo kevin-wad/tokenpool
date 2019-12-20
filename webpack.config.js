@@ -112,6 +112,6 @@ module.exports = {
         new ExtractTextPlugin({
             filename: 'app/assets/main.css'
          }),
-         new HtmlWebpackIncludeAssetsPlugin({ assets: ['css', 'csshome', 'images'], append: true })
+         new HtmlWebpackIncludeAssetsPlugin({ assets: ['css/style.css', 'csshome/component.css', 'csshome/demo.css', 'csshome/normalize.css'], append: true })
       ]
 };
