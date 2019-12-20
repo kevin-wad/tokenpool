@@ -4,6 +4,7 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 var environment = process.env.NODE_ENV || 'development';
 
@@ -103,5 +104,6 @@ module.exports = {
       }
     },
     plugins: [
-        webpackPlugins
+        webpackPlugins,
+      ]
 };
