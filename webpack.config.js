@@ -106,14 +106,6 @@ module.exports = {
     plugins: [
         new CopyPlugin([
           { from: 'app/assets', to: 'assets' }
-        ]),
-        new webpack.DefinePlugin({
-            'process.env': {
-              NODE_ENV: '"production"'
-            }
-          }),
-          new ExtractTextPlugin({
-            filename: 'app/assets/main.css'
-         })
+        ])
       ]
 };
