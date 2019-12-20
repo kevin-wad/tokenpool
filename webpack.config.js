@@ -1,16 +1,16 @@
 var webpack = require('webpack');
 var path = require('path');
 
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 var environment = process.env.NODE_ENV || 'development';
 
 /*
 var htmlPlugin = new HtmlWebpackPlugin({
-      title: 'Etica',
+      title: '0xBitcoin',
      filename: 'index.html',
       template: 'app/index.html',
 });
@@ -22,6 +22,7 @@ var extractPlugin = new ExtractTextPlugin({
 
 var webpackPlugins = [
     extractPlugin,
+    new CleanWebpackPlugin(),
     new webpack.DefinePlugin({
         'process.env': {
           NODE_ENV: '"production"'
@@ -33,7 +34,7 @@ var webpackPlugins = [
 
 const routesData = {
   routes: [
-    {url: '/', title: 'Etica Mining Pool', template: 'app/index.html', filename: 'index.html'},
+    {url: '/', title: 'Token Mining Pool', template: 'app/index.html', filename: 'index.html'},
     {url: '/account', title: 'Mining Accounts', template: 'app/account.html', filename: 'account/index.html'},
     {url: '/profile/:address', title: 'Mining Profile', template: 'app/profile.html', filename: 'profile/index.html'},
     {url: '/overview', title: 'Overview', template: 'app/overview.html', filename: 'overview/index.html'},
@@ -59,10 +60,10 @@ routesData.routes.forEach(function(element){
 
 
 module.exports = {
-    entry: ['./app/assets/javascripts/index'],
+    entry: ['./app/assets/javascripts/index', './app/assets/stylesheets/application.scss' ],
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: 'bundle.js',
+        filename: 'bundle.[hash:12].js',
         publicPath: '/'
     },
     module: {
@@ -103,7 +104,5 @@ module.exports = {
         'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
       }
     },
-    plugins: [
-        webpackPlugins
-      ]
+    plugins: webpackPlugins
 };
