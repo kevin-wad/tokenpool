@@ -104,6 +104,6 @@ module.exports = {
       }
     },
     plugins: [
-        webpackPlugins,
+        webpackPlugins
       ]
 };
