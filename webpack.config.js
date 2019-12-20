@@ -112,6 +112,6 @@ module.exports = {
               NODE_ENV: '"production"'
             }
           }),
-          extractPlugin,  
+          extractPlugin
       ]
 };
