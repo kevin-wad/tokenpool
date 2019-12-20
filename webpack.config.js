@@ -21,7 +21,6 @@ var extractPlugin = new ExtractTextPlugin({
 
 var webpackPlugins = [
     extractPlugin,
-    new CleanWebpackPlugin(),
     new webpack.DefinePlugin({
         'process.env': {
           NODE_ENV: '"production"'
