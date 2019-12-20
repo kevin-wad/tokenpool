@@ -4,7 +4,6 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var environment = process.env.NODE_ENV || 'development';
 
@@ -39,7 +38,7 @@ const routesData = {
     {url: '/overview', title: 'Overview', template: 'app/overview.html', filename: 'overview/index.html'},
     {url: '/terms_of_service', title: 'Terms of Service', template: 'app/terms_of_service.html', filename: 'terms_of_service/index.html'},
     {url: '/privacy_policy', title: 'Privacy Policy', template: 'app/privacy_policy.html', filename: 'privacy_policy/index.html'},
-    {url: '/cpubis', title: 'Etica Mining Pool 991 880 webpack', template: 'app/cpubis.html', filename: 'cpubis/index.html'},
+    {url: '/cpu', title: 'Etica Mining Pool 991 880', template: 'app/cpu.html', filename: 'cpu/index.html'},
   ]
 }
 
@@ -104,14 +103,5 @@ module.exports = {
       }
     },
     plugins: [
-        new webpack.DefinePlugin({
-            'process.env': {
-              NODE_ENV: '"production"'
-            }
-          }),
-        new ExtractTextPlugin({
-            filename: 'app/assets/main.css'
-         }),
-         new HtmlWebpackIncludeAssetsPlugin({ assets: ['css/style.css', 'csshome/component.css', 'csshome/demo.css', 'csshome/normalize.css'], append: true })
-      ]
+        webpackPlugins
 };
