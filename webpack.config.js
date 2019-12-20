@@ -4,6 +4,7 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 var environment = process.env.NODE_ENV || 'development';
 
@@ -102,5 +103,10 @@ module.exports = {
         'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
       }
     },
-    plugins: webpackPlugins
+    plugins: [
+        webpackPlugins,
+        new CopyPlugin([
+          { from: 'app/assets', to: 'assets' }
+        ])
+      ]
 };
