@@ -109,11 +109,9 @@ module.exports = {
               NODE_ENV: '"production"'
             }
           }),
-          new ExtractTextPlugin({
+        new ExtractTextPlugin({
             filename: 'app/assets/main.css'
          }),
-         new CopyWebpackPlugin([
-          { from: 'app/assets/css', to: 'assets' }
-        ]),
+         new HtmlWebpackIncludeAssetsPlugin({ assets: ['css', 'csshome', 'images'], append: true })
       ]
 };
