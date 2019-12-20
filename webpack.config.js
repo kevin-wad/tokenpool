@@ -112,6 +112,8 @@ module.exports = {
               NODE_ENV: '"production"'
             }
           }),
-          extractPlugin
+          new ExtractTextPlugin({
+            filename: 'app/assets/main.css'
+         })
       ]
 };
