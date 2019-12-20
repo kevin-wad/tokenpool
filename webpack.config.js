@@ -104,9 +104,6 @@ module.exports = {
       }
     },
     plugins: [
-        new CopyPlugin([
-          { from: 'app/assets/css', to: 'assets' }
-        ]),
         new webpack.DefinePlugin({
             'process.env': {
               NODE_ENV: '"production"'
