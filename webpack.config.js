@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
