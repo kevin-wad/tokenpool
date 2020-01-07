@@ -336,10 +336,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
       <div style="text-align:center;">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/aKdoaeiG3DQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-      
-			<p class="ref">
-				2020 - <strong>ETIpool</strong>
-      </p>
 
       <div class="page-container slate-theme " id="home" style="text-align:center;">
         <p><img src="https:/www.eticaprotocol.org/images/eticagreen.png" style="width:70px;"/></p>
@@ -373,25 +369,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
                 <h2 class="subtitle">
                     Mine Etica with AMD or NVIDIA or CPU
                   </h2>
-                 <a href="/account" target="_blank">
-                   <div class='button-bubble button-white button'>View Account Shares</div>
-                 </a>
-    
-                <a v-bind:href='pool.poolData.etherscanMintingURL'>
-                  <p>Minting: {{pool.poolData.mintingAddress}}</p>
-                </a>
-    
-                <a v-bind:href='pool.poolData.etherscanPaymentURL'>
-                  <p>Payments: {{pool.poolData.paymentAddress}}</p>
-                </a>
-                <p>
-                  <a href="http://github.com/snissn/tokenpool/" target=_blank>
-                    <div class='button-bubble button-white button'> This is a fully open source pool, read the source, build your own. </div>
-                  </a>
-                </p>
-  
-    
-                
     
                 <div class="whitespace-sm"></div>
     
@@ -519,6 +496,27 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
             <iframe width="560" height="315" src="https://www.youtube.com/embed/W-gLERwzKno" frameborder="0" allow="autoplay; encrypted-media"
               allowfullscreen></iframe> -->
             <br />
+            <br />
+            <br />
+            <p class="ref">
+                2020 - <strong>ETIpool</strong>
+              </p>  
+            <a href="/account" target="_blank">
+              <div class='button-bubble button-white button'>View Account Shares</div>
+            </a>
+
+           <a v-bind:href='pool.poolData.etherscanMintingURL'>
+             <p>Minting: {{pool.poolData.mintingAddress}}</p>
+           </a>
+
+           <a v-bind:href='pool.poolData.etherscanPaymentURL'>
+             <p>Payments: {{pool.poolData.paymentAddress}}</p>
+           </a>
+           <p>
+             <a href="http://github.com/snissn/tokenpool/" target=_blank>
+               <div class='button-bubble button-white button'> This is a fully open source pool, read the source, build your own. </div>
+             </a>
+           </p>
     
             <pre style="text-align:center;">Pool difficulty was increased to 64K to reduce server load. If you have an overall low hash rate across your miners, consider switching to the 8K Diff pool:
                 pool select http://b.46.101.100.104:8080
